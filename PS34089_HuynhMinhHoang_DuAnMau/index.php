@@ -117,7 +117,7 @@ if (isset($_GET['act'])) {
         case 'forgetpass':
             if (isset($_POST['checkemail']) && ($_POST['checkemail'])) {
                 $email = $_POST['email'];
-
+                //Check email show pass
                 $check = checkemail($email);
                 //Kiểm tra
                 if (is_array($check)) {
