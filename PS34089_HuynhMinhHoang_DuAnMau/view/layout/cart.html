@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết Kế Web</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/cart_detail.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-----------------------Header--------------------------->
+    <header>
+        <div id="header">
+            <div class="container-menu">
+                <a href="./index.html" class="logo">
+                    <img src="./image/logo.png" alt="">
+                </a>
+                <ul class="main-menu">
+                    <li><a href="./index.html">Home</a>
+                    </li>
+                    <li><a href="">Phone</a>
+                        <!-- Menu Đa Cấp -->
+                        <ul class="child-menu">
+                            <div class="children">
+                                <h4>Hãng</h4>
+                                <li><a href="">Apple</a></li>
+                                <li><a href="">Samsung</a></li>
+                                <li><a href="">Oppo</a></li>
+                                <li><a href="">Xiaome</a></li>
+                                <li><a href="">Realmi</a></li>
+                                <li><a href="">Vivo</a></li>
+                            </div>
+                            <div class="children">
+                                <h4>Giá</h4>
+                                <li><a href="">Từ 2 - 5 triệu</a></li>
+                                <li><a href="">Từ 6 - 9 triệu</a></li>
+                                <li><a href="">Từ 10 - 25 triệu</a></li>
+                                <li><a href="">Từ 25 triệu trở lên</a></li>
+                            </div>
+                            <div class="children">
+                                <h4>Loại</h4>
+                                <li><a href="">Android</a></li>
+                                <li><a href="">IOS</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="">Laptop</a>
+                        <!-- Menu Đa Cấp -->
+                        <ul class="child-menu">
+                            <div class="children">
+                                <h4>Hãng</h4>
+                                <li><a href="">Apple</a></li>
+                                <li><a href="">MSI</a></li>
+                                <li><a href="">HP</a></li>
+                                <li><a href="">Dell</a></li>
+                                <li><a href="">Linux</a></li>
+                            </div>
+                            <div class="children">
+                                <h4>Giá</h4>
+                                <li><a href="">Từ 6 - 9 triệu</a></li>
+                                <li><a href="">Từ 10 - 25 triệu</a></li>
+                                <li><a href="">Từ 25 triệu trở lên</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="">Information</a>
+                    </li>
+                    <li><a href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="group">
+                <div class="search-box">
+                    <input type="search" class="search-text" id="" placeholder="Search">
+                    <button class="search-btn"><ion-icon name="search-outline"></ion-icon></button>
+                </div>
+                <div class="cart">
+                    <!-- Tạo số lượng sản phẩm trên giỏ hàng -->
+                    <a href="giohang.html">
+                        <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    </a>
+                    <span class="num-cart">0</span>
+                </div>
+                <div class="toggle">
+                    <ion-icon class="toggle_menu" name="menu-outline">
+                    </ion-icon>
+                    <ul class="mobile-menu">
+                        <ion-icon class="toggle_close" name="close-outline"></ion-icon>
+                        <li><a href="./index.html">Home</a>
+                        </li>
+                        <li><a href="">Phone</a>
+                        </li>
+                        <li><a href="">Laptop</a>
+                        </li>
+                        <li><a href="">Information</a>
+                        </li>
+                        <li><a href="">Contact</a>
+                        </li>
+                        <div class="container-login_mobile">
+                            <a href="./login.html" target="_blank">Đăng Nhập</a>
+                            <a href="./form.html" target="_blank">Đăng Ký</a>
+                        </div>
+                    </ul>
+                    <div class="overflow"></div>
+                </div>
+                <div class="container-login">
+                    <a href="./login.html" target="_blank">Đăng Nhập</a>
+                    <a href="./form.html" target="_blank">Đăng Ký</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------------------------ Nav --------------------------->
+    <nav>
+        <div class="nav-header__title">
+            <h2>Thông tin đơn hàng</h2>
+        </div>
+        <div class="container">
+            <div class="main">
+                <!---------------------- Information_user ------------------------->
+                <div class="information">
+                    <h3>THÔNG TIN KHÁCH HÀNG</h3>
+                    <div class="form-group">
+                        <label for="text" class="title">Họ tên:</label>
+                        <div class="box-group">
+                            <input type="text" name="name" class="input username" autofocus autocomplete="off" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="text" class="title">Email:</label>
+                        <div class="box-group">
+                            <input type="text" name="email" class="input username" autofocus autocomplete="off"
+                                value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="text" class="title">Địa chỉ:</label>
+                        <div class="box-group">
+                            <input type="text" name="address" class="input username" autofocus autocomplete="off"
+                                value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="text" class="title">Số điện thoại:</label>
+                        <div class="box-group">
+                            <input type="text" name="phonenumber" class="input username" autofocus autocomplete="off"
+                                value="">
+                        </div>
+                    </div>
+                </div>
+                <!---------------------- End ------------------------->
+                <!---------------------- method ------------------------->
+                <div class="method">
+                    <h3>PHƯƠNG THỨC THANH TOÁN</h3>
+                    <div class="form-group">
+                        <ul>
+                            <li>
+                                <input type="radio" id="f-option" name="selector">
+                                <label for="f-option">Thanh toán bằng thẻ</label>
+                                <div class="check"></div>
+                            </li>
+                            <li>
+                                <input type="radio" id="s-option" name="selector">
+                                <label for="s-option">Nhận hàng và thanh toán</label>
+                                <div class="check">
+                                    <div class="inside"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!---------------------- End - Product ------------------------->
+                <!---------------------- Products ------------------------->
+                <div class="list-products">
+                    <h3>DANH SÁCH GIỎ HÀNG</h3>
+                    <div class="box">
+                        <div class="product">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Hình Ảnh</th>
+                                        <th colspan="3">Thông Tin</th>
+                                        <th>Giá</th>
+                                        <th>Số Lượng</th>
+                                        <th>Xóa</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="showcart">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!---------------------- End - Product ------------------------->
+            </div>
+        </div>
+    </nav>
+
+    <!-----------------------Footer--------------------------->
+    <footer>
+        <div id="footer-wrap">
+            <div id="footer-bottom">
+                <div class="ft-bt-main">
+                    <div class="ft">
+                        <ul class="main-ft">
+                            <li><a href="">Thông tin web</a></li>
+                            <li><a href="">Chính sách bảo hành</a></li>
+                            <li><a href="">Chính sách đổi trả</a></li>
+                            <li><a href="">Giao hàng & thanh toán</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft">
+                        <ul class="main-ft">
+                            <li><a href="">Mua hàng online</a></li>
+                            <li><a href="">Hướng dẫn online</a></li>
+                            <li><a href="">Hóa đơn</a></li>
+                            <li><a href="">Cảnh báo</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft">
+                        <ul class="main-ft">
+                            <li><a href="">Gọi mua:00000000</a></li>
+                            <li><a href="">Kỹ thuật:00000000</a></li>
+                            <li><a href="">Bảo hành:00000000</a></li>
+                            <li><a href="">Khiếu nại:00000000</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft">
+                        <ul class="main-ft">
+                            <li><ion-icon name="home-outline"></ion-icon><a href="">Ngõ 218, P.Bưởi, Tây Hồ, Hà Nội</a>
+                            </li>
+                            <li><ion-icon name="call-outline"></ion-icon><a href="">0123456789</a></li>
+                            <li><ion-icon name="mail-outline"></ion-icon><a href="">techphone@gmail.com</a></li>
+                        </ul>
+                        <div class="logo-tt">
+                            <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href=""><ion-icon name="logo-google"></ion-icon></a>
+                            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dp_flex__pay">
+                    <div class="pay">
+                        <img class="item1" src="./image/fjb.png" alt="">
+                        <img class="item2" src="./image/foxpay.png" alt="">
+                        <img class="item3" src="./image/visa.png" alt="">
+                        <img class="item4" src="./image/mastercard.png" alt="">
+                        <img class="item5" src="./image/zalopay.png" alt="">
+                        <img class="item6" src="./image/vnpay.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="lastFoo">
+                <div class="content">© 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM
+                    cấp ngày
+                    02/01/2007.
+                    Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP. Hồ Chí Minh. Điện thoại: 028 38125960.</div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
