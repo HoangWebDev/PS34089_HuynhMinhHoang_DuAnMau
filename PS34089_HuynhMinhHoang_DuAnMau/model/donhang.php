@@ -50,7 +50,9 @@ function cart($del)
                                 </td>
                                 <td>
                                     <div class="number-pro">
-                                        <input type="number" value="' . $number . '" id="numberip">
+                                        <button onclick="handleMinus()"><ion-icon name="remove-outline"></ion-icon></button>
+                                        <input type="text" value="'. $number.'" id="numberip">
+                                        <button onclick="handlePlus()"><ion-icon name="add-outline"></ion-icon></button>
                                     </div>
                                 </td>
                                 <td>

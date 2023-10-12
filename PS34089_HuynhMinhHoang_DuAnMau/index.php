@@ -215,9 +215,9 @@ if (isset($_GET['act'])) {
                 $fl = 0;
                 $i = 0;
                 foreach ($_SESSION['giohang'] as $sp) {
-                    if ($sp[1] === $name) {
-                        $numbernew = $item[4] + $number;
-                        $_SESSION['giohang'][$i][4] = $numbernew;
+                    if ($sp['name'] === $name) {
+                        $numbernew = $sp['number'] + $number;
+                        $_SESSION['giohang'][$i]['number'] = $numbernew;
                         $fl = 1;
                         break;
                     }
