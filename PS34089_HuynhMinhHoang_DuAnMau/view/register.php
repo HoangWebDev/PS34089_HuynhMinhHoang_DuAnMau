@@ -44,7 +44,7 @@
                     <div class="box-group">
                         <input type="password" name="confirmpass" class="input confirmpass" placeholder=" "
                             autocomplete="off">
-                        <label class="label" for="number-phone">Email password</label>
+                        <!-- <label class="label" for="number-phone">Email password</label> -->
                     </div>
                 </div>
                 <div class="err" id="errConfirmPass"></div>
