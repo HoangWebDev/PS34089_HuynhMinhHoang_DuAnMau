@@ -139,10 +139,18 @@ $hinh = '<img class="img-fearture" src="' . PATH_IMG . '' . $img . '" alt="">';
                             </div>
                         </div>
                     </div>
-                    <button class="buy-now"
-                        onclick="addCart('iphone-14-pro.png','Iphone 14 Promax Chính Hãng','25.390.000')"><a>Mua
-                            Ngay</a></button>
+                    <form action="index.php?act=addcart" method="post">
+                                            <input type="hidden" name="id" value="<?= $id ?>">
+                                            <input type="hidden" name="name" value="<?= $name  ?>">
+                                            <input type="hidden" name="img" value="<?= $img  ?>">
+                                            <input type="hidden" name="price" value="<?= $price  ?>">
+                                            <input type="hidden" name="number" value="1">
+                                            <input type="submit" name="btnaddcart" value="Mua Ngay" class="buy-now">
+                    </form>
                     <button class="buy-now buy-gop"><a href="">Mua Trả Góp 0%</a></button>
+                    <!-- <button class="buy-now"><a>Mua
+                            Ngay</a></button>
+                    <button class="buy-now buy-gop"><a href="">Mua Trả Góp 0%</a></button> -->
                 </div>
             </div>
         </div>
@@ -174,70 +182,6 @@ $hinh = '<img class="img-fearture" src="' . PATH_IMG . '' . $img . '" alt="">';
                     }
                     ?>
                 </div>
-                <!-- <div class="item">
-                    <a href="">
-                        <div class="img-ac">
-                            <img alt=""
-                                src="https://cdn.tgdd.vn/Products/Images/54/289781/tai-nghe-bluetooth-airpods-pro-2-magsafe-charge-apple-mqd83-trang-090922-034128-600x600.jpeg">
-                        </div>
-                        <div class="note">
-                            <h4>
-                                Tai nghe Bluetooth AirPods
-                            </h4>
-                            <span>
-                                <b>6.940.000₫</b>
-                            </span>
-                        </div>
-                        <div class="star">
-                            <img src="./view/layout/image/star.png" alt="">
-                            <img src="./view/layout/image/star.png" alt="">
-                            <img src="./view/layout/image/star.png" alt="">
-                            <img src="./view/layout/image/star.png" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="">
-                        <div class="img-ac">
-                            <img alt=""
-                                src="https://cdn.tgdd.vn/Products/Images/1363/291824/mieng-dan-kinh-iphone-14-pro-jcpal-thumb-1-600x600.jpg">
-                        </div>
-                        <div class="note">
-                            <h4>Miến dán kính cường lực</h4>
-                            <span>
-                                <b>400.000₫</b>
-                            </span>
-                        </div>
-                        <div class="star">
-                            <img src="./view/layout/image/star.png" alt="">
-                            <img src="./view/layout/image/star.png" alt="">
-                            <img src="./view/layout/image/star.png" alt="">
-                            <img src="./view/layout/image/star.png" alt="">
-                            <img src="./view/layout/image/star.png" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="">
-                        <div class="img-ac">
-                            <img alt=""
-                                src="https://cdn.tgdd.vn/Products/Images/60/290321/op-lung-magsafe-iphone-14-pro-nhua-trong-apple-mpu63-thumb-600x600.jpg">
-                        </div>
-                        <div class="note">
-                            <h4>Ốp lưng</h4>
-                            <span>
-                                <b>200.000₫</b>
-                            </span>
-                        </div>
-                        <div class="star">
-                            <img src="./view/layout/image/star.png" alt="">
-                            <img src="./view/layout/image/star.png" alt="">
-                            <img src="./view/layout/image/star.png" alt="">
-                            <img src="./view/layout/image/star.png" alt="">
-                            <img src="./view/layout/image/star.png" alt="">
-                        </div>
-                    </a>
-                </div> -->
             </div>
         </div>
     </div>

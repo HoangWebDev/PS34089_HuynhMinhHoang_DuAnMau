@@ -47,7 +47,7 @@ function get_detail_product($id_product)
 /* Lấy sản phẩm cùng loại trong trang chi tiết*/
 function get_product_same_type($idproduct, $id_catalog)
 {
-    $sql = "SELECT * FROM product WHERE id_catalog = " . $id_catalog . " AND id <>" . $idproduct;
+    $sql = "SELECT * FROM product WHERE id_catalog = " . $id_catalog . " AND id <>" . $idproduct ." ORDER BY id DESC LIMIT 4";
     return get_all($sql);
 }
 /* Update sản phẩm*/
