@@ -52,6 +52,7 @@ foreach ($cataloglist as $item) {
                                         <th scope="col">Gía sản phẩm</th>
                                         <th scope="col">Gía cũ</th>
                                         <th scope="col">Giảm giá</th>
+                                        <th scope="col">Sản phẩm mới</th>
                                         <th scope="col">Thao tác</th>
                                     </tr>
                                 </thead>
@@ -70,6 +71,7 @@ foreach ($cataloglist as $item) {
                                             <td>' . $price . '</td>
                                             <td>' . $price_sale . '</td>
                                             <td>' . $promotion . '</td>
+                                            <td>' . $new . '</td>
                                             <td>' . $edit . ' - ' . $del . '</td>
                                           </tr>';
                                         $i++;
@@ -136,6 +138,10 @@ foreach ($cataloglist as $item) {
                     <div class="mb-3">
                         <label for="topic-name" class="col-form-label">Giá giảm:</label>
                         <input type="text" class="form-control" name="promotion">
+                    </div>
+                    <div class="mb-3">
+                        <label for="topic-name" class="col-form-label">Sản phẩm mới:</label>
+                        <input type="text" class="form-control" name="new">
                     </div>
                     <div class="mb-3">
                         <label for="topic-name" class="col-form-label">Hình sản phẩm:</label>

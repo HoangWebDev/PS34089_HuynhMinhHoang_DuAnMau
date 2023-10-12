@@ -49,7 +49,7 @@ if (isset($_GET['act'])) {
                 $product_same_type = get_product_same_type($id_product, $id_catalog);
                 include_once "view/productdetail.php";
             } else {
-                $saleproduct = get_sale_product();
+                $newproduct = get_new_product();
                 $sphome1 = getall_sp(0, 0);
                 $sphome2 = getall_sp(0, 1);
                 include_once "view/home.php";
@@ -239,7 +239,7 @@ if (isset($_GET['act'])) {
             break;
 
         default:
-            $saleproduct = get_sale_product();
+            $newproduct = get_new_product();
             $sphome1 = getall_sp_home();
             // $sphome2 = getall_sp($id_catalog, 1);
             include_once 'view/home.php';
@@ -247,7 +247,7 @@ if (isset($_GET['act'])) {
     }
 } else {
 
-    $saleproduct = get_sale_product();
+    $newproduct = get_new_product();
     $sphome1 = getall_sp_home();
     // $sphome2 = getall_sp($id_catalog, 1);
     include_once 'view/home.php';

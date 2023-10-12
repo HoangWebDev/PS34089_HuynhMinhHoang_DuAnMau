@@ -12,11 +12,11 @@
     <nav>
         <div class="contact">
             <h2>
-                <ion-icon name="ribbon-outline"></ion-icon>Khuyến mãi hot
+                <ion-icon name="ribbon-outline"></ion-icon>Sản phẩm mới
             </h2>
             <div class="product-main product-iphone">
                 <?php
-                foreach ($saleproduct as $sp) {
+                foreach ($newproduct as $sp) {
                     extract($sp);
                     if ($promotion > 0) {
                         $promo = '<p>Giảm Giá ' . $promotion . '%</p>';

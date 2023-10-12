@@ -70,6 +70,10 @@ foreach ($cataloglist as $item) {
                     <input type="text" class="form-control" name="promotion" value="<?= $promotion ?>">
                 </div>
                 <div class="mb-3">
+                    <label for="topic-name" class="col-form-label">Sản phẩm mới:</label>
+                    <input type="text" class="form-control" name="new" value="<?= $new ?>">
+                </div>
+                <div class="mb-3">
                     <label for="topic-name" class="col-form-label">Hình sản phẩm:</label>
                     <input type="file" name="img">
                     <?= $hinh ?>

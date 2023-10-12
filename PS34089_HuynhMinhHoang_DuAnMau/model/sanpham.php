@@ -6,9 +6,9 @@ function getonesp($id)
     return get_one($sql);
 }
 /* Lấy sản phẩm sale*/
-function get_sale_product()
+function get_new_product()
 {
-    $sql = "SELECT * FROM product WHERE promotion > 20 ORDER BY promotion DESC";
+    $sql = "SELECT * FROM product WHERE new = 1 ORDER BY new DESC";
     return get_all($sql);
 }
 /* Lấy tất cả sản phẩm show ra home*/
@@ -51,12 +51,12 @@ function get_product_same_type($idproduct, $id_catalog)
     return get_all($sql);
 }
 /* Update sản phẩm*/
-function update_product($id, $name, $price, $price_sale, $promotion, $id_catalog, $ten_file_hinh)
+function update_product($id, $name, $price, $price_sale, $promotion, $new, $id_catalog, $ten_file_hinh)
 {
     if ($ten_file_hinh != "") {
-        $sql = "UPDATE product SET name='$name', price='$price', price_sale='$price_sale', promotion='$promotion', id_catalog='$id_catalog', img='$ten_file_hinh' WHERE id=" . $id;
+        $sql = "UPDATE product SET name='$name', price='$price', price_sale='$price_sale', promotion='$promotion', new='$new', id_catalog='$id_catalog', img='$ten_file_hinh' WHERE id=" . $id;
     } else {
-        $sql = "UPDATE product SET name='$name', price='$price', price_sale='$price_sale', promotion='$promotion', id_catalog='$id_catalog' WHERE id=" . $id;
+        $sql = "UPDATE product SET name='$name', price='$price', price_sale='$price_sale', promotion='$promotion', new='$new', id_catalog='$id_catalog' WHERE id=" . $id;
     }
     //echo $sql;
     update($sql);
@@ -79,8 +79,8 @@ function delete_product($id)
     return $tb;
 }
 /* Add sản phẩm*/
-function add_product($name, $price, $price_sale, $promotion, $id_catalog, $ten_file_hinh)
+function add_product($name, $price, $price_sale, $promotion, $new, $id_catalog, $ten_file_hinh)
 {
-    $sql = "INSERT INTO product (id_catalog ,name, img, price, price_sale, promotion) VALUES ('$id_catalog','$name','$ten_file_hinh', '$price', '$price_sale', '$promotion')";
+    $sql = "INSERT INTO product (id_catalog ,name, img, price, price_sale, promotion, new) VALUES ('$id_catalog','$name','$ten_file_hinh', '$price', '$price_sale', '$promotion'. '$new')";
     insert($sql);
 }

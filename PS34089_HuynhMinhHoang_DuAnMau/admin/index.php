@@ -84,6 +84,7 @@ if (isset($_SESSION['role']) && ($_SESSION['role'] == 1)) {
                     $price = $_POST['price'];
                     $price_sale = $_POST['price_sale'];
                     $promotion = $_POST['promotion'];
+                    $new = $_POST['new'];
                     $id_catalog = $_POST['id_catalog'];
                     //Lay hinh
                     $ten_file_hinh = $_FILES['img']['name'];
@@ -97,7 +98,7 @@ if (isset($_SESSION['role']) && ($_SESSION['role'] == 1)) {
                             unlink($hinh_cu);
                     }
                     //Cap nhat database
-                    update_product($id, $name, $price, $price_sale, $promotion, $id_catalog, $ten_file_hinh);
+                    update_product($id, $name, $price, $price_sale, $promotion, $new, $id_catalog, $ten_file_hinh);
                 }
                 //Load dssp
                 $productlist = getall_sp_admin();
@@ -112,6 +113,7 @@ if (isset($_SESSION['role']) && ($_SESSION['role'] == 1)) {
                     $price = $_POST['price'];
                     $price_sale = $_POST['price_sale'];
                     $promotion = $_POST['promotion'];
+                    $new = $_POST['new'];
                     $id_catalog = $_POST['id_catalog'];
                     //Lay hinh
                     $ten_file_hinh = $_FILES['img']['name'];
@@ -121,7 +123,7 @@ if (isset($_SESSION['role']) && ($_SESSION['role'] == 1)) {
                         move_uploaded_file($_FILES['img']['tmp_name'], $target_file);
                     }
                     //Cap nhat database
-                    add_product($name, $price, $price_sale, $promotion, $id_catalog, $ten_file_hinh);
+                    add_product($name, $price, $price_sale, $promotion, $new, $id_catalog, $ten_file_hinh);
                 }
                 //Load dssp
                 $productlist = getall_sp_admin();
