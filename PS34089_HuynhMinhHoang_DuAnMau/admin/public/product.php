@@ -65,7 +65,7 @@ foreach ($cataloglist as $item) {
                                         $edit = "<a href='index.php?page=productupdateform&id=" . $id . "'>Sửa</a>";
                                         $del = "<a href='index.php?page=delproduct&id=" . $id . "'>Xóa</a>";
                                         echo '<tr>
-                                            <td>' . $i . '</td>
+                                            <td>' . $id . '</td>
                                             <td><img src="' . $img . '" width="80"></td>
                                             <td>' . $name . '</td>
                                             <td>' . $price . '</td>

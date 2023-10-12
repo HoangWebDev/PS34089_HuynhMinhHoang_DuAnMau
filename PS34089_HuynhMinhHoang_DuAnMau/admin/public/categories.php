@@ -52,7 +52,7 @@
                                       $edit="<a href='index.php?page=updateform&id=".$id."'>Sửa</a>";
                                       $del="<a href='index.php?page=del&id=".$id."'>Xóa</a>";
                                       echo '<tr>
-                                            <td>'.$i.'</td>
+                                            <td>'.$id.'</td>
                                             <td>'.$name.'</td>
                                             <td>'.$edit.' - '.$del.'</td>
                                           </tr>';

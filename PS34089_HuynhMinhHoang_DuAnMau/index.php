@@ -211,7 +211,6 @@ if (isset($_GET['act'])) {
                 $img = $_POST['img'];
                 $price = $_POST['price'];
                 $number = 1;
-
                 //Kiểm tra mặt hàng có tồn tại hay không
                 $fl = 0;
                 $i = 0;
