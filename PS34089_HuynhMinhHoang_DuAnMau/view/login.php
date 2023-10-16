@@ -11,7 +11,7 @@
                     <label class="label">Username</label>
                 </div>
             </div>
-            <div class="err" id="errUser"></div>
+            <!-- <div class="err" id="errUser"></div> -->
             <div class="form-group">
                 <label for="pass" class="title">Mật khẩu:</label> <br>
                 <div class="box-group">
@@ -26,11 +26,11 @@
                 <input type="checkbox" name="checkbox">
                 <a href="index.php?act=forgetpass">Quên mật khẩu</a>
             </div>
-            <div class="err" id="errPass"></div>
+            <!-- <div class="err" id="errPass"></div> -->
             <div class="register">
-                <p>Không có tài khoản! <a href="./form.html">Đăng Ký</a></p>
+                <p>Không có tài khoản! <a href="index.php?act=register">Đăng Ký</a></p>
             </div>
-            <input type="submit" value="Đăng Nhập" class="button" name="login" onclick="check_login()">
+            <input type="submit" value="Đăng Nhập" class="button" name="login" onclick="return check_login()">
             <div class="or">
                 <span>Or</span>
             </div>

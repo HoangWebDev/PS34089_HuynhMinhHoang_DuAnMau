@@ -4,10 +4,11 @@ var email = document.querySelector(".email");
 var password = document.querySelector(".password");
 var confirmpass = document.querySelector(".confirmpass");
 
-function validForm() {
+var validForm = function () {
     //Check Name
     if(name.value == ""){
-        document.querySelector("#errName").innerHTML = "Xin hãy nhập thông tin bắt buộc!";
+        // document.querySelector("#errName").innerHTML = "Xin hãy nhập thông tin bắt buộc!";
+        alert("Xin hãy nhập thông tin bắt buộc!");
         name.focus();
         return false;
     }else if(name.value.length < 6){

@@ -51,15 +51,15 @@
             <div class="login">
                 <p>Đã có tài khoản! <a href="index.php?act=login.php">Đăng Nhập</a></p>
             </div>
-            <input type="submit" value="Đăng Ký" name="register" class="button" onclick="validForm()">
+            <input type="submit" value="Đăng Ký" name="register" class="button" onclick="return validForm()">
         </form>
-        <h2 style="color: red;">
+        <p style="color: red;">
             <?php
             if (isset($tb) && $tb != "") {
                 echo $tb;
             }
             ?>
-        </h2>
+        </p>
 
     </div>
 </div>

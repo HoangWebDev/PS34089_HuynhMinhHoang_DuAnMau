@@ -103,11 +103,8 @@ if (isset($_GET['act'])) {
                         header("location: index.php");
                         break;
                     }
-                }else{
-                    include_once "view/login.php";
-                    break;
-                }
             }
+        }
 
         case 'login':
             # code...
@@ -133,7 +130,7 @@ if (isset($_GET['act'])) {
             break;
 
         case 'register':
-            if (isset($_POST['register']) && ($_POST['register'])) {
+            if (isset($_POST['register']) && ($_POST['register']) && $_POST['name'] !="" && $_POST['email'] !="" && $_POST['user'] !="" && $_POST['pass'] !="") {
                 $name = $_POST['name'];
                 $email = $_POST['email'];
                 $username = $_POST['user'];

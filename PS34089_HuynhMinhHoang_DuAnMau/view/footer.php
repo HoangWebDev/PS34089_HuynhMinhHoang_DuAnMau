@@ -30,7 +30,7 @@
                  <div class="ft">
                      <ul class="main-ft">
                          <li>
-                             <ion-icon name="home-outline"></ion-icon><a href="">Ngõ 218, P.Bưởi, Tây Hồ, Hà Nội</a>
+                             <ion-icon name="home-outline"></ion-icon><a href="">Đường.ĐHT, P.Tân Hưng Thuận, Q.12, TP.Hồ Chí Minh</a>
                          </li>
                          <li>
                              <ion-icon name="call-outline"></ion-icon><a href="">0123456789</a>
@@ -70,7 +70,7 @@
              <div class="content">© 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM
                  cấp ngày
                  02/01/2007.
-                 Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP. Hồ Chí Minh. Điện thoại: 028 38125960.</div>
+                 Địa chỉ:  P. Tân Hưng Thuận, Q.12, TP. Hồ Chí Minh. Điện thoại: 028 38125960.</div>
          </div>
      </div>
  </footer>
