@@ -1,4 +1,4 @@
-var name = document.querySelector(".name");
+var ten = document.querySelector(".name");
 var userName = document.querySelector(".username");
 var email = document.querySelector(".email");
 var password = document.querySelector(".password");
@@ -6,31 +6,18 @@ var confirmpass = document.querySelector(".confirmpass");
 
 var validForm = function () {
     //Check Name
-    if(name.value == ""){
-        // document.querySelector("#errName").innerHTML = "Xin hãy nhập thông tin bắt buộc!";
-        alert("Xin hãy nhập thông tin bắt buộc!");
-        name.focus();
+    if(ten.value == ""){
+        document.querySelector("#errName").innerHTML = "Hãy nhập tên người dùng!";
+        // alert("Xin hãy nhập thông tin bắt buộc!");
+        ten.focus();
         return false;
-    }else if(name.value.length < 6){
+    }else if(ten.value.length < 6){
         document.querySelector("#errName").innerHTML = "Nhập tối đa 6 ký tự!";
-        name.focus();
+        ten.focus();
         return false;
     }else{
         document.querySelector("#errName").innerHTML = "";
     }
-    //Check UserName
-    if(userName.value == ""){
-        document.querySelector("#errUser").innerHTML = "Xin hãy nhập thông tin bắt buộc!";
-        userName.focus();
-        return false;
-    }else if(userName.value.length < 6){
-        document.querySelector("#errUser").innerHTML = "Nhập tối đa 6 ký tự!";
-        userName.focus();
-        return false;
-    }else{
-        document.querySelector("#errUser").innerHTML = "";
-    }
-    //Định dạng email
     let emailPtn = /^(\w{2,}@\w{2,}(\.[a-zA-Z]{2,3})){1,2}$/;
     if(email.value == ""){
         document.querySelector("#errEmail").innerHTML = "Vui lòng nhập email!";
@@ -45,9 +32,22 @@ var validForm = function () {
     }else{
         document.querySelector("#errEmail").innerHTML = "";
     }
+    //Check UserName
+    if(userName.value == ""){
+        document.querySelector("#errUser").innerHTML = "Xin hãy nhập tài khoảnc!";
+        userName.focus();
+        return false;
+    }else if(userName.value.length < 6){
+        document.querySelector("#errUser").innerHTML = "Nhập tối đa 6 ký tự!";
+        userName.focus();
+        return false;
+    }else{
+        document.querySelector("#errUser").innerHTML = "";
+    }
+    //Định dạng email
     // Check PassWord
     if(password.value == ""){
-        document.querySelector("#errPass").innerHTML = "Xin hãy nhập thông tin bắt buộc!";
+        document.querySelector("#errPass").innerHTML = "Mời bạn đặt mật khẩu!!";
         password.focus();
         return false;
     }else if(password.value.length < 8){
@@ -59,7 +59,7 @@ var validForm = function () {
     }
     //Check EnterPass
     if(confirmpass.value == ""){
-        document.querySelector("#errConfirmPass").innerHTML = "Xin hãy nhập thông tin bắt buộc!";
+        document.querySelector("#errConfirmPass").innerHTML = "Xin hãy nhập lại mật khẩu vừa đặt!";
         confirmpass.focus();
         return false;
     }else if(confirmpass.value != password.value){

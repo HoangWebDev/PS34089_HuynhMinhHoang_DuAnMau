@@ -81,7 +81,7 @@ if (isset($_GET['act'])) {
             break;
 
         case 'login_user':
-            if (isset($_POST['login']) && ($_POST['login'])) {
+            if (isset($_POST['login']) && ($_POST['login']) && $_POST['username'] != "" && $_POST['password'] != "") {
                 $username = $_POST['username'];
                 $password = $_POST['password'];
                 $kq = getuser($username, $password);
@@ -103,8 +103,10 @@ if (isset($_GET['act'])) {
                         header("location: index.php");
                         break;
                     }
+                }
             }
-        }
+            include_once "view/login.php";
+            break;
 
         case 'login':
             # code...
@@ -130,7 +132,7 @@ if (isset($_GET['act'])) {
             break;
 
         case 'register':
-            if (isset($_POST['register']) && ($_POST['register']) && $_POST['name'] !="" && $_POST['email'] !="" && $_POST['user'] !="" && $_POST['pass'] !="") {
+            if (isset($_POST['register']) && ($_POST['register']) && $_POST['name'] !="" && $_POST['email'] !="" && $_POST['user'] !="" && $_POST['pass'] !="" ) {
                 $name = $_POST['name'];
                 $email = $_POST['email'];
                 $username = $_POST['user'];

@@ -30,7 +30,7 @@
                  <div class="ft">
                      <ul class="main-ft">
                          <li>
-                             <ion-icon name="home-outline"></ion-icon><a href="">Đường.ĐHT, P.Tân Hưng Thuận, Q.12, TP.Hồ Chí Minh</a>
+                             <ion-icon name="home-outline"></ion-icon><a href="">P.Tân Hưng Thuận, Q.12, TP.Hồ Chí Minh</a>
                          </li>
                          <li>
                              <ion-icon name="call-outline"></ion-icon><a href="">0123456789</a>
