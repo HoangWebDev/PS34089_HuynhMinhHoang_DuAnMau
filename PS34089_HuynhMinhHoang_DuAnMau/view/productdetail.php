@@ -7,12 +7,12 @@ if ($promotion > 0) {
     $promo = '';
 }
 if ($price > 0) {
-    $gia = '<span class="price-cut">$' . $price . '</span>';
+    $gia = '<span class="price-cut">' . $price . '0.000đ</span>';
 } else {
     $gia = '<span class="price-cut">Đang cập nhật</span>';
 }
 if ($price_sale > 0) {
-    $giacu = '<span class="price">$' . $price_sale . '</span>';
+    $giacu = '<span class="price">' . $price_sale . '0.000đ</span>';
 } else {
     $giacu = '';
 }
@@ -174,7 +174,7 @@ $hinh = '<img class="img-fearture" src="' . PATH_IMG . '' . $img . '" alt="">';
                                         <div class="note">
                                             <h4>' . $name . '</h4>
                                             <span>
-                                                <b>' . $price . '$</b>
+                                                <b>' . $price . '0.000đ</b>
                                             </span>
                                         </div>
                                     </a>

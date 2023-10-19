@@ -98,7 +98,7 @@ if (isset($_SESSION['name']) && ($_SESSION['email']) && ($_SESSION['address']) &
                         }
 
                         ?>
-                        <span id="price">$<?= $tong ?></span>
+                        <span id="price"><?= $tong ?>0.000đ</span>
                     </div>
                 </div>
             </div>

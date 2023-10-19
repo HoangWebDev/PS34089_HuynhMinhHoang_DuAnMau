@@ -45,7 +45,7 @@ function cart($del)
                                 </td>
                                 <td>
                                     <div class="price-main">
-                                        <p class="price-cut">' . $price . '</p>
+                                        <p class="price-cut">' . $price . '0.000đ</p>
                                     </div>
                                 </td>
                                 <td>
@@ -56,7 +56,7 @@ function cart($del)
                                     </div>
                                 </td>
                                 <td>
-                                    ' . $tt . '
+                                    ' . $tt . '0.000đ
                                 </td>
                                 ' . $del_td . '
                                 </tr>
@@ -75,6 +75,7 @@ function total_cart()
         $tt = $price * $number;
         $tong += $tt;
     }
+    
     return $tong;
 }
 

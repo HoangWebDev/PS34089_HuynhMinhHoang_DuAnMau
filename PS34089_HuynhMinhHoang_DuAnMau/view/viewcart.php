@@ -33,9 +33,8 @@
                     $tong += $tt;
                 }
             }
-
             ?>
-            <span id="price">$<?= $tong ?></span>
+            <span id="price"><?= $tong?>0.000đ</span>
         </div>
         <a class="btn_order" href="index.php?act=cart">Đặt Hàng</a>
         <!-- <button class="order"><a class="order" href="index.php?act=cart_detail">Đặt Hàng</a></button> -->
