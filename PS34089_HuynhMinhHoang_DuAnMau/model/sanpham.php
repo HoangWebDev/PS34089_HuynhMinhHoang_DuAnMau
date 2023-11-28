@@ -81,6 +81,6 @@ function delete_product($id)
 /* Add sản phẩm*/
 function add_product($name, $price, $price_sale, $promotion, $new, $id_catalog, $ten_file_hinh)
 {
-    $sql = "INSERT INTO product (id_catalog ,name, img, price, price_sale, promotion, new) VALUES ('$id_catalog','$name','$ten_file_hinh', '$price', '$price_sale', '$promotion'. '$new')";
+    $sql = "INSERT INTO product (id_catalog ,name, img, price, price_sale, promotion, new) VALUES ('$id_catalog','$name','$ten_file_hinh', '$price', '$price_sale', '$promotion', '$new')";
     insert($sql);
 }

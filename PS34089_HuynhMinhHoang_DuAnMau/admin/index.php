@@ -102,8 +102,8 @@ if (isset($_SESSION['role']) && ($_SESSION['role'] == 1)) {
                 }
                 //Load dssp
                 $productlist = getall_sp_admin();
-                header('Location: index.php?page=products');
-                // require_once('public/product.php');
+                // header('Location: index.php?page=products');
+                require_once('public/product.php');
                 break;
 
             case 'addproduct':
@@ -119,7 +119,7 @@ if (isset($_SESSION['role']) && ($_SESSION['role'] == 1)) {
                     $ten_file_hinh = $_FILES['img']['name'];
                     if ($ten_file_hinh != "") {
                         //Upload hinh len host
-                        $target_file = "../" . PATH_IMG . basename($_FILES['img']['name']);
+                        $target_file = "../uploads/" . basename($_FILES['img']['name']);
                         move_uploaded_file($_FILES['img']['tmp_name'], $target_file);
                     }
                     //Cap nhat database
